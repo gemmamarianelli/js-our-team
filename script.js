@@ -30,36 +30,47 @@ let membri = [
         ruolo: "GraphicDesigner",
         foto: "barbara-ramos-graphic-designer.jpg",
     }
-]
+];
 
+//let risultato = prova("ehi");
+//console.log(risultato);
+let container = document.getElementById("main");
 //-------------------------------------------------------------------------------------------
 
 
 
+for(i = 0; i<membri.length; i++){
+stampaMembroTeam(membri[i]);
+}
+
+for(i = 0; i<membri.length; i++){
+    container.innerHTML += getHtmlMembroTeam(membri[i]);
+    }
+    
 
 
 
 
 
+//----------------------------------------FUNZIONE---------------------------------------------
 
-
-
-
-
-
-
-//----------------------------------------funzione---------------------------------------------
-
-function stampaMembriTeam(membri){
+function stampaMembroTeam(membro){
     console.log(
         `
         ------INFORMAZIONI MEMBRI------
-        nome: ${membri.nome}
-        ruolo: ${membri.ruolo}
-        foto: ${membri.foto}
+        nome: ${membro.nome}
+        ruolo: ${membro.ruolo}
+        foto: ${membro.foto}
         -------------------------------
         `
         )
 
 }
+
+function getHtmlMembroTeam(membro){
+let result = membro.nome;
+
+return result;
+}
 //----------------------------------------------------------------------------------------------
+
