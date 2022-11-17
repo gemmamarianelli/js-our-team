@@ -1,6 +1,7 @@
+//definire nomi, ruoli e foto----------------------------------------------------------
 let membri = [
     {
-        nome: Walter, Gordon,
+        nome: WalterGordon,
         ruolo: OfficeManager,
         foto: walter-gordon-office-manager.jpg,
     },
@@ -30,7 +31,22 @@ let membri = [
         foto: barbara-ramos-graphic-designer.jpg,
     }
 ]
+//-------------------------------------------------------------------------------------------
 
-console.log(membri);
 
 
+
+//----------------------------------------funzione---------------------------------------------
+
+function membriTeam(membri){
+    console.log(
+        `
+        ---------INFORMAZIONI----------
+        nome: ${membri.nome}
+        ruolo: ${membri.ruolo}
+        foto: ${membri.foto}
+        -------------------------------
+        `
+    )
+}
+//----------------------------------------------------------------------------------------------
